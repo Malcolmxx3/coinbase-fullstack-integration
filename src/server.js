@@ -1,3 +1,8 @@
+<<<<<<< codex/implement-global-error-handling-middleware
+const app = require('./app');
+
+const PORT = process.env.PORT || 3000;
+=======
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcryptjs');
@@ -109,6 +114,7 @@ app.post('/api/auth/login', async (req, res) => {
 });
 
 app.use((req, res) => res.status(404).json({ error: 'not found' }));
+>>>>>>> main
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
